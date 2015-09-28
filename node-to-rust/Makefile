@@ -4,10 +4,10 @@ else
     EXT := so
 endif
 
-all: target/debug/libdouble_input.$(EXT) node_modules/ffi
+all: target/debug/libffi_example.$(EXT) node_modules/ffi
 	node src/main.js
 
-target/debug/libdouble_input.$(EXT): src/lib.rs Cargo.toml
+target/debug/libffi_example.$(EXT): src/lib.rs Cargo.toml
 	cargo build
 
 node_modules/ffi:

@@ -1,8 +1,14 @@
 [package]
 name = "python-to-rust"
 version = "0.1.0"
-authors = ["Alex Crichton <alex@alexcrichton.com>"]
+authors = [
+  "Alex Crichton <alex@alexcrichton.com>",
+  "Livio Ribeiro <livioribeiro@outlook.com>"
+]
 
 [lib]
-name = "double_input"
+name = "ffi_example"
 crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"

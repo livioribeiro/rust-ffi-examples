@@ -4,10 +4,10 @@ else
     EXT := so
 endif
 
-all: target/debug/libdouble_input.$(EXT)
+all: target/debug/libffi_example.$(EXT)
 	perl src/main.pl
 
-target/debug/libdouble_input.$(EXT): src/lib.rs Cargo.toml
+target/debug/libffi_example.$(EXT): src/lib.rs Cargo.toml
 	cargo build
 
 clean:
