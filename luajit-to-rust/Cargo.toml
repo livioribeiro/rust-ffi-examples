@@ -5,5 +5,8 @@ version = "0.1.0"
 authors = ["Livio Ribeiro <livioribeiro@outlook.com>"]
 
 [lib]
-name = "double_input"
+name = "ffi_example"
 crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"
